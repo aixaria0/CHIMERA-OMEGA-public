@@ -1,0 +1,110 @@
+{
+  "schema": "chimera-provider/v1",
+  "repository": "aixaria0/CHIMERA-OMEGA",
+  "role": "evidence-kernel",
+  "control_plane": "aixaria0/CHIMERA-ONE",
+  "version": "0.2.0",
+  "entrypoints": [
+    {
+      "capability": "omega.verify",
+      "command": [
+        "cargo",
+        "run",
+        "--locked",
+        "--bin",
+        "omega",
+        "--",
+        "verify"
+      ],
+      "mode": "verification",
+      "network": "none",
+      "mutation": "none"
+    },
+    {
+      "capability": "omega.replay",
+      "command": [
+        "cargo",
+        "run",
+        "--locked",
+        "--bin",
+        "omega",
+        "--",
+        "replay"
+      ],
+      "mode": "verification",
+      "network": "none",
+      "mutation": "none"
+    },
+    {
+      "capability": "omega.verify-aether-lineage",
+      "command": [
+        "cargo",
+        "run",
+        "--locked",
+        "--bin",
+        "omega",
+        "--",
+        "verify-aether-lineage"
+      ],
+      "mode": "verification",
+      "network": "none",
+      "mutation": "none"
+    },
+    {
+      "capability": "omega.verify-aether-journal",
+      "mode": "verification",
+      "network": "none",
+      "mutation": "none",
+      "command": [
+        "omega",
+        "verify-aether-journal",
+        "<export.json>",
+        "--context",
+        "<context.json>",
+        "--expect-context",
+        "<externally-reviewed-context-digest>"
+      ]
+    },
+    {
+      "capability": "omega.verify-audit-archive",
+      "mode": "verification",
+      "network": "none",
+      "mutation": "none",
+      "command": [
+        "omega",
+        "verify-audit-archive",
+        "<archive.json>",
+        "--context",
+        "<context.json>",
+        "--expect-context",
+        "<externally-reviewed-context-digest>"
+      ]
+    },
+    {
+      "capability": "omega.verify-aether-historical-journal",
+      "mode": "verification",
+      "network": "none",
+      "mutation": "none",
+      "command": [
+        "omega",
+        "verify-aether-historical-journal",
+        "<export.json>",
+        "--registry",
+        "<registry.json>",
+        "--context",
+        "<context.json>",
+        "--expect-context",
+        "<externally-reviewed-context-digest>"
+      ]
+    }
+  ],
+  "boundaries": [
+    "Evidence integrity and claim truth are separate predicates.",
+    "Unknown verification dimensions remain UNKNOWN rather than being promoted from local success.",
+    "Artifact/process separation does not establish authenticated organizational independence or external truth.",
+    "Aether lineage verification selects trust through an externally pinned context; full journal integrity and core OMEGA verdicts remain separate.",
+    "Complete Aether journal verification is bounded to 256 events and a caller-pinned genesis-to-head checkpoint; external anchoring, independent observation and producer binary attestation remain UNKNOWN, with the OMEGA core verdict NOT_RUN.",
+    "Audit archive verification confirms reviewed manifest bytes and selected observation roles; authenticity and finality remain UNKNOWN, and finding verdict and target execution remain NOT_RUN.",
+    "Historical Aether authorization selects exact receipts, keys and policies under an external review pin; registry freshness, authorization time and current live-key authority remain UNKNOWN. Public testnets and third-party operational targets are excluded."
+  ]
+}

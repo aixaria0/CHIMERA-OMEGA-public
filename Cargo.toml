@@ -1,0 +1,65 @@
+[package]
+name = "chimera-omega"
+version = "0.2.0"
+edition = "2021"
+rust-version = "1.90"
+publish = false
+description = "Bounded, offline verification of claim-bound evidence"
+license = "AGPL-3.0-or-later"
+
+[lib]
+path = "rust/src/lib.rs"
+
+[[bin]]
+name = "omega"
+path = "rust/src/main.rs"
+
+[[bin]]
+name = "omega-observer"
+path = "rust/src/observer_main.rs"
+
+[[bin]]
+name = "omega-witness"
+path = "rust/src/witness_main.rs"
+
+[[test]]
+name = "kernel"
+path = "rust/tests/kernel.rs"
+
+[[test]]
+name = "adapter"
+path = "rust/tests/adapter.rs"
+
+[[test]]
+name = "observer"
+path = "rust/tests/observer.rs"
+
+[[test]]
+name = "compiler"
+path = "rust/tests/compiler.rs"
+
+[[test]]
+name = "witness"
+path = "rust/tests/witness.rs"
+
+[[test]]
+name = "aether_lattice"
+path = "rust/tests/aether_lattice.rs"
+
+[[test]]
+name = "aether_journal"
+path = "rust/tests/aether_journal.rs"
+
+[[test]]
+name = "audit_archive"
+path = "rust/tests/audit_archive.rs"
+
+[[test]]
+name = "aether_historical"
+path = "rust/tests/aether_historical.rs"
+
+[dependencies]
+ed25519-dalek = { version = "=2.2.0", default-features = false, features = ["std"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"

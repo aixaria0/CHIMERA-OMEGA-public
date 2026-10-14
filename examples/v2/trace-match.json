@@ -1,0 +1,103 @@
+{
+  "claim": {
+    "assumptions": [
+      "State digest positions refer to corresponding boundaries.",
+      "The caller obtains the expected package digest through its own review process."
+    ],
+    "epistemic_state": "HYPOTHESIS",
+    "id": "fixture.trace-equality",
+    "limitations": [
+      "AI-generated synthetic fixture; repeated-digit digest tokens are placeholders, not measurements or claims of existing raw artifacts."
+    ],
+    "predicate": {
+      "expected": "expected",
+      "kind": "trace_equality",
+      "negative_controls": [
+        "control"
+      ],
+      "observed": [
+        "observed"
+      ]
+    },
+    "schema": "chimera-claim/v2",
+    "statement": "The supplied observed state-commitment sequence equals the supplied expected sequence.",
+    "target": {
+      "configuration": "3333333333333333333333333333333333333333333333333333333333333333",
+      "environment": "4444444444444444444444444444444444444444444444444444444444444444",
+      "revision": "fixture-v1",
+      "system": "synthetic-state-trace"
+    }
+  },
+  "digest": "c2fde1c46452cbe0804b957f4ee080b0a2b14d3d1802ad3f77ef126bfee8c1c5",
+  "evidence": [
+    {
+      "body": {
+        "claim_digest": "60e9ae9bd440c6bc44a407911624e5a0a3652a71eed5ccfff6bacb80da47bb10",
+        "evidence_class": "SYNTHETIC",
+        "id": "control",
+        "parents": [
+          "expected",
+          "observed"
+        ],
+        "payload": {
+          "baseline": "observed",
+          "index": 1,
+          "kind": "mutation_control",
+          "replacement": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+        },
+        "producer": {
+          "id": "codex-fixture-author",
+          "kind": "AI"
+        },
+        "schema": "chimera-evidence-node/v1"
+      },
+      "digest": "7d32c7e68976fcccf258453bfa64dd191c50e20ce8f7976a568493eed260bfc7"
+    },
+    {
+      "body": {
+        "claim_digest": "60e9ae9bd440c6bc44a407911624e5a0a3652a71eed5ccfff6bacb80da47bb10",
+        "evidence_class": "SYNTHETIC",
+        "id": "expected",
+        "parents": [],
+        "payload": {
+          "kind": "state_trace",
+          "states": [
+            "0000000000000000000000000000000000000000000000000000000000000000",
+            "1111111111111111111111111111111111111111111111111111111111111111",
+            "2222222222222222222222222222222222222222222222222222222222222222"
+          ]
+        },
+        "producer": {
+          "id": "codex-fixture-author",
+          "kind": "AI"
+        },
+        "schema": "chimera-evidence-node/v1"
+      },
+      "digest": "5135c28330f5b404d0689751bb7b59fbb26d3e629c37c8978ea9e57ceb1edbf1"
+    },
+    {
+      "body": {
+        "claim_digest": "60e9ae9bd440c6bc44a407911624e5a0a3652a71eed5ccfff6bacb80da47bb10",
+        "evidence_class": "SYNTHETIC",
+        "id": "observed",
+        "parents": [],
+        "payload": {
+          "kind": "state_trace",
+          "states": [
+            "0000000000000000000000000000000000000000000000000000000000000000",
+            "1111111111111111111111111111111111111111111111111111111111111111",
+            "2222222222222222222222222222222222222222222222222222222222222222"
+          ]
+        },
+        "producer": {
+          "id": "codex-fixture-author",
+          "kind": "AI"
+        },
+        "schema": "chimera-evidence-node/v1"
+      },
+      "digest": "189e565d6af93d9ceae36ca75c2cbc5070e3bb09e7f44dcc9cc9a31a30869812"
+    }
+  ],
+  "policy": "omega.trace-equality/v1",
+  "schema": "chimera-evidence-envelope/v2"
+}

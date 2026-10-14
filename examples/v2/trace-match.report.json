@@ -1,0 +1,59 @@
+{
+  "assumptions": [
+    "State digest positions refer to corresponding boundaries.",
+    "The caller obtains the expected package digest through its own review process."
+  ],
+  "claim_digest": "60e9ae9bd440c6bc44a407911624e5a0a3652a71eed5ccfff6bacb80da47bb10",
+  "claim_id": "fixture.trace-equality",
+  "comparisons": [
+    {
+      "evidence_id": "observed",
+      "first_divergence": null,
+      "state": "CONFIRMED"
+    }
+  ],
+  "controls": [
+    {
+      "baseline": "observed",
+      "evidence_id": "control",
+      "first_divergence": {
+        "expected": "1111111111111111111111111111111111111111111111111111111111111111",
+        "index": 1,
+        "observed": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+        "previous": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "reason": "same comparison procedure rejected the deterministic mutation",
+      "state": "PASS"
+    }
+  ],
+  "dimensions": {
+    "artifact_conformance": "CONFIRMED",
+    "finality_externality": "UNKNOWN",
+    "formal_proof": "UNKNOWN",
+    "implementation_binding": "UNKNOWN",
+    "independent_observation": "UNKNOWN",
+    "negative_control": "PASS",
+    "production_reachability": "UNKNOWN",
+    "replay": "NOT_RUN",
+    "runtime_reproduction": "UNKNOWN"
+  },
+  "envelope_digest": "c2fde1c46452cbe0804b957f4ee080b0a2b14d3d1802ad3f77ef126bfee8c1c5",
+  "limitations": [
+    "AI-generated synthetic fixture; repeated-digit digest tokens are placeholders, not measurements or claims of existing raw artifacts.",
+    "Producer IDs and evidence classes are declarations, not authenticated identities or independent observations.",
+    "State commitments are compared; referenced raw state bytes are not fetched or verified.",
+    "Synthetic mutation controls test this equality predicate, not the target or the entire verifier."
+  ],
+  "policy": "omega.trace-equality/v1",
+  "provenance_order": [
+    "expected",
+    "observed",
+    "control"
+  ],
+  "reasons": [
+    "Only equality of supplied state-digest sequences is evaluated; target execution is not performed."
+  ],
+  "schema": "chimera-verification-report/v2",
+  "scope": "PINNED_ARTIFACT_TRACE_EQUALITY_ONLY",
+  "status": "LOCALLY_SUPPORTED"
+}

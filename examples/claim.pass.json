@@ -1,0 +1,28 @@
+{
+  "schema": "chimera-claim-envelope/v1",
+  "claim": {
+    "id": "example.integer.identity",
+    "statement": "Observed integer identity is preserved across the declared boundary.",
+    "epistemicState": "established",
+    "limitations": ["Demonstration fixture only; no external production claim."]
+  },
+  "target": {
+    "system": "fixture",
+    "revision": "demo",
+    "configuration": "local"
+  },
+  "dimensions": {
+    "formalProof": "NOT_APPLICABLE",
+    "implementationBinding": "BOUND",
+    "runtimeReproduction": "CONFIRMED",
+    "independentObservation": "CONFIRMED",
+    "replay": "CONFIRMED",
+    "negativeControl": "PASS",
+    "productionReachability": "NOT_APPLICABLE",
+    "finalityExternality": "NOT_APPLICABLE"
+  },
+  "evidence": [
+    {"id": "input", "kind": "fixture", "value": "9007199254740993"},
+    {"id": "output", "kind": "fixture", "value": "9007199254740993"}
+  ]
+}
