@@ -1,0 +1,285 @@
+{
+  "schema": "chimera-compiler-conformance/v1",
+  "repository": "aixaria0/RCHAIN-COMPLIER",
+  "revision": "ef9b8b70fa1212bda57fed24cbbc3ddebb5aaf81",
+  "evidenceClass": "SYNTHETIC_SIGNED_INTEROPERABILITY_FIXTURE",
+  "canonicalProbe": "{\"x\":-4,\"y\":\"سلام\\n🧪\"}",
+  "catalog": [
+    {
+      "name": "match",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "PASS",
+        "code": "VERIFIED",
+        "reason": "Task-bound claim reproduced by two distinct non-submitter identities",
+        "packageDigest": "sha256:f628c5c474e10c27820ff47e716dd61f4de7a792f8c2987544ef5b88f7552380",
+        "eventRoot": "sha256:306f765bfcd5b3248544f396f7e61bc387176b962123a501c4186e098f4a3e9d",
+        "taskId": "sha256:9876b92eb08ed9552055759f6929fbd3bab8cefea5953c5c3ec030be7e2e4659",
+        "claimId": "sha256:03e70dbae09f129015cd548236cb7bd98830076024a22f51672b4deb846f4c0e",
+        "eventCount": 6,
+        "verifierActorIds": [
+          "sha256:a471120dcf1dc0b97cadf4dfdfd131d26357b93074b58f446e63de6e39f99801",
+          "sha256:daecfdb7efc414b7c1a887c0de19c3c90f93b8b9ced5402078ff3da51c3c7119"
+        ],
+        "operation": "integer-sum/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    },
+    {
+      "name": "refuted",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "FAIL",
+        "code": "CLAIM_REFUTED",
+        "reason": "Two distinct non-submitter identities independently reproduce refutation",
+        "packageDigest": "sha256:c6772aa09fb95aeaa60b7c16fd66044a93e6a7d2356d873c7b5d4509697e5c3f",
+        "eventRoot": "sha256:691da70079074dc88d46b236ab9ede98a2d55037c8543240799353099fd09312",
+        "taskId": "sha256:3757f36cc428f2fa923a9b4f100bfad5d9a189e87020c3e52fbe21ce9b904572",
+        "claimId": "sha256:3cecbf8f251e68d85671be91bf4c3c1e0ccc62e5ebfeb905d79043a7271bd08e",
+        "eventCount": 6,
+        "verifierActorIds": [
+          "sha256:a471120dcf1dc0b97cadf4dfdfd131d26357b93074b58f446e63de6e39f99801",
+          "sha256:daecfdb7efc414b7c1a887c0de19c3c90f93b8b9ced5402078ff3da51c3c7119"
+        ],
+        "operation": "integer-sum/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    },
+    {
+      "name": "signed-negative-integers",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "PASS",
+        "code": "VERIFIED",
+        "reason": "Task-bound claim reproduced by two distinct non-submitter identities",
+        "packageDigest": "sha256:906dc35a2110d6c08f80228f9e77dd2e393961cb1d9c7b1a5d96d82f515a96ac",
+        "eventRoot": "sha256:cd65ba5179ccc1e981af9478cb0b4ddee6728f0d3e951061c7fd7e38d89e7c84",
+        "taskId": "sha256:5152598b76ca54690a3ed605f6a2f34d2fa7c5aef9b9be0edd3d2843e3af3ac6",
+        "claimId": "sha256:f63df69d7b2ea66edb3d4bfd6ae7a7d598e3e7f31eae9f4b36225bf26bcfd917",
+        "eventCount": 6,
+        "verifierActorIds": [
+          "sha256:a471120dcf1dc0b97cadf4dfdfd131d26357b93074b58f446e63de6e39f99801",
+          "sha256:daecfdb7efc414b7c1a887c0de19c3c90f93b8b9ced5402078ff3da51c3c7119"
+        ],
+        "operation": "integer-sum/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    },
+    {
+      "name": "unsupported",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "BLOCKED",
+        "code": "UNSUPPORTED_VERIFIER",
+        "reason": "Reviewer has no registered verifier for this operation",
+        "packageDigest": "sha256:d495a59416ab39fc7206b74229162f06cd9a1855b84c4687fe7a171638f1a519",
+        "eventRoot": "sha256:deee9a2592012858de32d574dfdf7a56dfb2941d17da62105d2f88a05bfe3bc2",
+        "taskId": "sha256:b563997dcd7131e972f7d943eff62753b966b778fe6db59f299f8270eed5d986",
+        "claimId": "sha256:7159a840dc946613ad205bf6fb6f5984061e9e87c15dbc69c64465040027e77d",
+        "eventCount": 4,
+        "verifierActorIds": [],
+        "operation": "unregistered/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    },
+    {
+      "name": "one-verifier",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "BLOCKED",
+        "code": "QUORUM_MISSING",
+        "reason": "Two independent conclusive verifier receipts are required",
+        "packageDigest": "sha256:bb4c91ebf008dbdb882aeabdba0b072b41b8ba332e75badf0ec6ae9e3ad815e8",
+        "eventRoot": "sha256:a30d40f814a25ea816d8a5d0bdcda736353da9e963ab4dfcc836753365bdcd98",
+        "taskId": "sha256:9876b92eb08ed9552055759f6929fbd3bab8cefea5953c5c3ec030be7e2e4659",
+        "claimId": "sha256:03e70dbae09f129015cd548236cb7bd98830076024a22f51672b4deb846f4c0e",
+        "eventCount": 5,
+        "verifierActorIds": [
+          "sha256:a471120dcf1dc0b97cadf4dfdfd131d26357b93074b58f446e63de6e39f99801"
+        ],
+        "operation": "integer-sum/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    },
+    {
+      "name": "no-verifiers",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "BLOCKED",
+        "code": "QUORUM_MISSING",
+        "reason": "Two independent conclusive verifier receipts are required",
+        "packageDigest": "sha256:68c3aac6e19486921c7e63a527a9e19f88167ff9fda44fa36861affaa08a52bf",
+        "eventRoot": "sha256:d5c0a80c8d00fe056b09f0afe26e8a761d44f739923133b5b9eb6c14f293140f",
+        "taskId": "sha256:9876b92eb08ed9552055759f6929fbd3bab8cefea5953c5c3ec030be7e2e4659",
+        "claimId": "sha256:03e70dbae09f129015cd548236cb7bd98830076024a22f51672b4deb846f4c0e",
+        "eventCount": 4,
+        "verifierActorIds": [],
+        "operation": "integer-sum/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    },
+    {
+      "name": "missing-parent",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "BLOCKED",
+        "code": "INCOMPLETE_EVIDENCE",
+        "reason": "Target evidence contains missing dependencies, quarantined or unreproduced events",
+        "packageDigest": "sha256:dc01b1e21060da4cdbfd4319dbe42130fd048bb35797a2bb1eec9b34a28a28ed",
+        "eventRoot": "sha256:ea94e17cc786b09bb1b723481af2a0a52fb6324452323827eefee2ad54c09e69",
+        "taskId": "sha256:9876b92eb08ed9552055759f6929fbd3bab8cefea5953c5c3ec030be7e2e4659",
+        "claimId": "sha256:03e70dbae09f129015cd548236cb7bd98830076024a22f51672b4deb846f4c0e",
+        "eventCount": 5,
+        "verifierActorIds": [],
+        "operation": "integer-sum/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    },
+    {
+      "name": "submitter-receipt",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "BLOCKED",
+        "code": "QUORUM_MISSING",
+        "reason": "Two independent conclusive verifier receipts are required",
+        "packageDigest": "sha256:b1f29cd2247399688dc76c9d0d0e9ce6066f0fe88ad71f767b7b7d9bfe2577ff",
+        "eventRoot": "sha256:e8eef2331a6dbd6c7468fbd405d6bdbd313e320cfe8873929ff9a1afc51d514c",
+        "taskId": "sha256:9876b92eb08ed9552055759f6929fbd3bab8cefea5953c5c3ec030be7e2e4659",
+        "claimId": "sha256:03e70dbae09f129015cd548236cb7bd98830076024a22f51672b4deb846f4c0e",
+        "eventCount": 6,
+        "verifierActorIds": [
+          "sha256:a471120dcf1dc0b97cadf4dfdfd131d26357b93074b58f446e63de6e39f99801"
+        ],
+        "operation": "integer-sum/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    },
+    {
+      "name": "signed-false-receipt",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "BLOCKED",
+        "code": "INCOMPLETE_EVIDENCE",
+        "reason": "Target evidence contains missing dependencies, quarantined or unreproduced events",
+        "packageDigest": "sha256:efadfc9d46aac37d0b34eba540299cea82590833195143ebe36b52da192a4d02",
+        "eventRoot": "sha256:2f1c006a5324d7e5c6df2f6f37f694809d249885f644e0a76b76c3dd7d8cb7ff",
+        "taskId": "sha256:9876b92eb08ed9552055759f6929fbd3bab8cefea5953c5c3ec030be7e2e4659",
+        "claimId": "sha256:03e70dbae09f129015cd548236cb7bd98830076024a22f51672b4deb846f4c0e",
+        "eventCount": 6,
+        "verifierActorIds": [],
+        "operation": "integer-sum/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    },
+    {
+      "name": "equivocation",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "BLOCKED",
+        "code": "INCOMPLETE_EVIDENCE",
+        "reason": "Target evidence contains missing dependencies, quarantined or unreproduced events",
+        "packageDigest": "sha256:7b13e82a35716e233ab7901550385abffb50b40c8a859cad59c39c09cee7846a",
+        "eventRoot": "sha256:1317aa51dbcc43015df429a3c40823aa64aa26686897c4ebd9e24adb6824206e",
+        "taskId": "sha256:9876b92eb08ed9552055759f6929fbd3bab8cefea5953c5c3ec030be7e2e4659",
+        "claimId": "sha256:03e70dbae09f129015cd548236cb7bd98830076024a22f51672b4deb846f4c0e",
+        "eventCount": 7,
+        "verifierActorIds": [],
+        "operation": "integer-sum/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    },
+    {
+      "name": "signed-wrong-operation",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "FAIL",
+        "code": "BINDING_MISMATCH",
+        "reason": "Target verification selects a different operation from its task",
+        "packageDigest": "sha256:2cec06d12de42d9ec9f4049dfd60a0411d8635c944e30c046bbf63bb3870c524",
+        "eventRoot": "sha256:8efa03725b6faa3db75adaeab7ec9bb84864c5e6d9650999fc600a838fc0ec3e",
+        "taskId": "sha256:9876b92eb08ed9552055759f6929fbd3bab8cefea5953c5c3ec030be7e2e4659",
+        "claimId": "sha256:03e70dbae09f129015cd548236cb7bd98830076024a22f51672b4deb846f4c0e",
+        "eventCount": 7,
+        "verifierActorIds": [],
+        "operation": "integer-sum/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    },
+    {
+      "name": "signed-wrong-input",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "FAIL",
+        "code": "BINDING_MISMATCH",
+        "reason": "Target evidence input differs from its task input",
+        "packageDigest": "sha256:8d0b4fd36d24b9497d22e1ae7eeff623b83f28597a81298e055f6c416a7ec670",
+        "eventRoot": "sha256:a2b8b14cded2b93d93f6f06a21bf86dced380dd4355264e9bca8aeda3bd02f37",
+        "taskId": "sha256:9876b92eb08ed9552055759f6929fbd3bab8cefea5953c5c3ec030be7e2e4659",
+        "claimId": "sha256:03e70dbae09f129015cd548236cb7bd98830076024a22f51672b4deb846f4c0e",
+        "eventCount": 7,
+        "verifierActorIds": [],
+        "operation": "integer-sum/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    },
+    {
+      "name": "unrelated-unsupported",
+      "native": {
+        "schema": "assurance-report/v1",
+        "status": "PASS",
+        "code": "VERIFIED",
+        "reason": "Task-bound claim reproduced by two distinct non-submitter identities",
+        "packageDigest": "sha256:84b0921db384acf8466ae01296675091302c5c2fb8c79abff71eb40a21ed1a58",
+        "eventRoot": "sha256:4d55bbd3c0e46056c74e0a94da7c7399613065730c9af3c46be32e9cb8e37f51",
+        "taskId": "sha256:9876b92eb08ed9552055759f6929fbd3bab8cefea5953c5c3ec030be7e2e4659",
+        "claimId": "sha256:03e70dbae09f129015cd548236cb7bd98830076024a22f51672b4deb846f4c0e",
+        "eventCount": 10,
+        "verifierActorIds": [
+          "sha256:a471120dcf1dc0b97cadf4dfdfd131d26357b93074b58f446e63de6e39f99801",
+          "sha256:daecfdb7efc414b7c1a887c0de19c3c90f93b8b9ced5402078ff3da51c3c7119"
+        ],
+        "operation": "integer-sum/v1",
+        "limitations": [
+          "Distinct local identities do not establish independent operators or malicious-host isolation.",
+          "PASS reproduces registered verifier semantics; external execution and withheld-evidence completeness require separate provenance."
+        ]
+      }
+    }
+  ]
+}

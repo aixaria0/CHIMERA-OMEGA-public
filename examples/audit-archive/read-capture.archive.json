@@ -1,0 +1,47 @@
+{
+  "schema": "chimera-audit-archive/v1",
+  "source_repository": "aixaria0/chimera-rchain-staking-audit",
+  "source_revision": "ac839aa088ed66af726b53bb88be4d8d39cbd6a2",
+  "archive_id": "SR003/read-rounding-01",
+  "manifest_chunks": [
+    "6dc6d907f7d853d601c330f8ac616c89904d01cb79cb94d7b9c918279015cabf  blocks.json\n34321b3909dde5c9fbc471ba329daa457bbe3b286bfb80223367353f9ef0983f  config.identity\n8d7e94e7748bff01dfeea0f6121d63e5669a2944b1b2c1e5c633da1ebfdf9ea2  explore-by-hash.request.json\ne19602c228ec948c7bde55e7f18b41b4eb61900adbb857cf5777eab90ee7b1f6  explore-by-hash.response.json\n0ba1e578cac8b37fa65d68bdd8e3f8edfb315aa1dc8914a2c32f9a0d70e53fef  fn_pos_info.rho\nc15cb26fe50dc0f93fa8d27a155fa12f96498de01e664eb85cd6b6d982dca7b8  js-parse-witness.json\nd52b851af1d9a07c564ba08a7eafb6aaa7572c074f619eedb8a0ed94e76d5dd5  source-binding.json\nab437a182eb185538de121759d34317678c70edd8c3cf7836ae51ed1b8905045  wallet-display-witness.json\n"
+  ],
+  "artifacts": [
+    {
+      "path": "blocks.json",
+      "content_chunks": [
+        "[{\"version\":1,\"shardId\":\"/root\",\"blockHash\":\"29c8cd9b981af86fc2573739801f3210d345b090ce365c6d850688b179e22e69\",\"blockNumber\":0,\"sender\":\"046f54b994700eead517ca445f09f56f7e77b47b9365dac2399cf2185d9995d112d3cb57934300a977d0b7cb46d8d0ed7893802300a347c755066e4352fa2d9094\",\"seqNum\":0,\"preStateHash\":\"0e5751c026e543b2e8ab2eb06099daa1d1e5df47778f7787faab45cdf12fe3a8\",\"postStateHash\":\"958fe743511d1c1f5331f1eceef2e8509d57c990c87d07811d6343b96bd72889\",\"justifications\":[],\"bonds\":[{\"validator\":\"046f54b994700eead517ca445f09f56f7e77b47b9365dac2399cf2185d9995d112d3cb57934300a977d0b7cb46d8d0ed7893802300a347c755066e4352fa2d9094\",\"stake\":9007199254740993}],\"sigAlgorithm\":\"secp256k1\",\"sig\":\"3045022100e1cd0b26c0f5aaa0d5213d71b57fa343a47abaf017b7cb090acdd00cde4efc8a02204c36cf35139104c350490831a154516a1f0804967f7b834fdd89a1c381733461\",\"blockSize\":\"230092\",\"deployCount\":15,\"rejectedDeploys\":[],\"timestamp\":0}]"
+      ]
+    },
+    {
+      "path": "config.identity",
+      "content_chunks": [
+        "node_revision=5017363275628a0313da9f45c4fcfc44f3064d21\nbinary_sha256=0ed4d67f6aee3bb92e906cc1611d7019f2668250c80d1110d2ba2a89e91152f7\ninstrumentation_patch_sha256=bc989c4631d5c03a59a16264c0842067090ce84d7511bfe3744d5b4a5ccc38aa\ninstrumentation=cap_1TiB_and_10TiB_LMDB_maps_to_4GiB_for_Android_Termux_only\nnetwork_id=chimera-sr003-i64-devmode-local\nstandalone=true\ndev_mode=true\nhost=127.0.0.1\napi_host=127.0.0.1\nports=44400,44401,44402,44403,44404,44405\npropose_on_deploy=false\nautopropose=false\nthread_pool_size=2\nbond_minimum=1\nbond_maximum=9223372036854775807\nepoch_length=100\nquarantine_length=50\nvalidator_pub=046f54b994700eead517ca445f09f56f7e77b47b9365dac2399cf2185d9995d112d3cb57934300a977d0b7cb46d8d0ed7893802300a347c755066e4352fa2d9094\ngenesis_stake=9007199254740993\nwallet_revision=477002b8722e8507e2397d9679c35ac61de7f088\npurpose=wallet-explore-read-path-only; no consensus/finality inference\n"
+      ]
+    },
+    {
+      "path": "explore-by-hash.response.json",
+      "content_chunks": [
+        "{\"expr\":[{\"ExprTuple\":{\"data\":[{\"ExprInt\":{\"data\":9007199254740993}},{\"ExprBool\":{\"data\":true}}]}}],\"block\":{\"version\":1,\"shardId\":\"/root\",\"blockHash\":\"29c8cd9b981af86fc2573739801f3210d345b090ce365c6d850688b179e22e69\",\"blockNumber\":0,\"sender\":\"046f54b994700eead517ca445f09f56f7e77b47b9365dac2399cf2185d9995d112d3cb57934300a977d0b7cb46d8d0ed7893802300a347c755066e4352fa2d9094\",\"seqNum\":0,\"preStateHash\":\"0e5751c026e543b2e8ab2eb06099daa1d1e5df47778f7787faab45cdf12fe3a8\",\"postStateHash\":\"958fe743511d1c1f5331f1eceef2e8509d57c990c87d07811d6343b96bd72889\",\"justifications\":[],\"bonds\":[{\"validator\":\"046f54b994700eead517ca445f09f56f7e77b47b9365dac2399cf2185d9995d112d3cb57934300a977d0b7cb46d8d0ed7893802300a347c755066e4352fa2d9094\",\"stake\":9007199254740993}],\"sigAlgorithm\":\"secp256k1\",\"sig\":\"3045022100e1cd0b26c0f5aaa0d5213d71b57fa343a47abaf017b7cb090acdd00cde4efc8a02204c36cf35139104c350490831a154516a1f0804967f7b834fdd89a1c381733461\",\"blockSize\":\"230092\",\"deployCount\":15,\"rejectedDeploys\":[],\"timestamp\":0},\"replySource\":\"firstPrivateName\"}"
+      ]
+    },
+    {
+      "path": "js-parse-witness.json",
+      "content_chunks": [
+        "{\n  \"wire_decimal\": \"9007199254740993\",\n  \"parsed_js_number\": 9007199254740992,\n  \"parsed_js_to_string\": \"9007199254740992\",\n  \"number_is_safe_integer\": false,\n  \"string_roundtrip_preserves_wire_decimal\": false,\n  \"delta_from_wire\": \"-1\"\n}\n"
+      ]
+    },
+    {
+      "path": "source-binding.json",
+      "content_chunks": [
+        "{\n  \"exact_match\": true,\n  \"expected_sha256\": \"0ba1e578cac8b37fa65d68bdd8e3f8edfb315aa1dc8914a2c32f9a0d70e53fef\",\n  \"observed_sha256\": \"0ba1e578cac8b37fa65d68bdd8e3f8edfb315aa1dc8914a2c32f9a0d70e53fef\",\n  \"source_path\": \"src/utils/rho.ts::fn_pos_info\",\n  \"wallet_repository\": \"rchain-community/r-wallet\",\n  \"wallet_revision\": \"477002b8722e8507e2397d9679c35ac61de7f088\"\n}\n"
+      ]
+    },
+    {
+      "path": "wallet-display-witness.json",
+      "content_chunks": [
+        "{\n  \"display_matches_exact\": false,\n  \"exact_rev\": \"90071992.54740993\",\n  \"wallet_display_en_US\": \"90,071,992.54740992\",\n  \"wire_drops\": \"9007199254740993\"\n}\n"
+      ]
+    }
+  ]
+}

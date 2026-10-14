@@ -1,0 +1,65 @@
+{
+  "schema": "chimera-aether-historical-conformance/v1",
+  "source_repository": "aixaria0/aether-runtime",
+  "lineage_source_revision": "04d785f7beee5ff96d78e092a1d73b79987c9e0e",
+  "journal_export_source_revision": "30dad8ec794e3f27600bfc0a5a5df072e79ba8c4",
+  "acquisition": "Saved own-runtime exports; retired-view changes only the attributed unsigned producer view.",
+  "synthetic_cases": [
+    "retired-view"
+  ],
+  "runtime_reproduction": "NOT_RUN",
+  "network_interaction": "NONE",
+  "rejection_controls": [
+    "registry replacement under original pin",
+    "revoked signer under fresh review",
+    "withdrawn policy under fresh review",
+    "unlisted receipt under fresh review",
+    "transplanted task authorization",
+    "dangling key authorization",
+    "unsupported policy revision",
+    "widened executor policy",
+    "fingerprint substitution",
+    "duplicate authorization",
+    "raw output substitution",
+    "journal hash corruption",
+    "missing explicit parent",
+    "external context pin substitution",
+    "missing direct-parent approval"
+  ],
+  "positive_controls": [
+    "fresh active-key label leaves live authorization UNKNOWN"
+  ],
+  "source_capture_sha256": {
+    "examples/aether-journal/echo.export.json": "9a7cf2065e24bb11e354ac3e18d059ce4738bb4fa3de2a9ad91435a0e552f8a7",
+    "examples/aether-journal/uppercase.export.json": "924cb9a5437ce280c7f45362508c436e6695df8fb6ff992858befc1387119a7a",
+    "examples/aether-journal/sha256.export.json": "9a8b603118b1e67b0153855ff54f4886d98b524b2a54b6840873659f09cc8264",
+    "examples/aether-journal/empty.export.json": "bdb6cc32335d37dc533246cc28c256c6a165d3d8a392bd1867c9638f0fd84f55",
+    "examples/aether-journal/replay.export.json": "2695f3aa7b967f50bf79f24711fdebf3a1cad1ca50b3faf95ee3f36dcd02d1e0"
+  },
+  "omega_binary_sha256": "9ceae2f62b45714c882e80044d36dd149fb72c0985cb3f701efd5afe36d54feb",
+  "omega_source_sha256": {
+    "rust/src/aether_historical.rs": "a772374b1778df5de9cc42a9de7018c233b0286993d0b9050fc5f7707b5617e9",
+    "rust/src/aether_lattice.rs": "cd8f93acad73c8a5ca54796e8385daf48e6c39b421d252408f60d224d63c8164",
+    "rust/src/aether_journal.rs": "4d3e0454e7db79417c9a80ecf7fd092a7708bc16509110884c30b135bf031ffb",
+    "rust/src/main.rs": "e9a5c7ce11cf782b11d6d68d1a8e7b023ccf05efb38d0213224ccddfa33eda54",
+    "rust/src/encoding.rs": "96abbef24121543867a015a565404e1503330ccda82cbdc92c1e7cd1e8afa6b0",
+    "tools/aether-historical-conformance.py": "af2d15530c2d231eb6db9f82d0a4f03c3606120b425c2343a67486d74898b5a4",
+    "Cargo.lock": "0d5aff82259ed51b4f4b0c1bd8ad5a27626be68c90dade0c56f8fc98bcce7ad7"
+  },
+  "artifact_sha256": {
+    "replay.context.json": "ae0723ff35891b86b85c35a831f15a348554e02f8dbc18455b3c91b0ab222671",
+    "replay.context.sha256": "4e00cd4307c359599b979aff9d8ae4bb24b6c901faf43fc12bb392c30e7bfeb3",
+    "replay.export.json": "2695f3aa7b967f50bf79f24711fdebf3a1cad1ca50b3faf95ee3f36dcd02d1e0",
+    "replay.registry.json": "985677df02eac4e983cd8ed9dcadc0ff26fc681a4747957fe05b0366e64d0a69",
+    "replay.report.json": "3cf4af4dffc9c090c563c524e7dd0ac692737497de8d2734f61d7e00772d680f",
+    "retired-view.context.json": "3013ad6f72e73b3e03862ccdd89110e048b6645379f4b006283ad42a946bf921",
+    "retired-view.context.sha256": "01f777ae5e39a8d6d4adbf627b1fdffa627eb2c87587b48f21d2883bab4e01b0",
+    "retired-view.export.json": "55dcf2bfe6c9cb7580bd32812df20431390d6bc0f66c05f82e6609216001bcc3",
+    "retired-view.registry.json": "fc687aad4bb6606bbd03b7b264a12fe00d337fecf1304c54fa2d90bc09eac1c9",
+    "retired-view.report.json": "2231538be724d09e1d6fd39a25861ce8fddab12196cab0955622119b3d0c60b7"
+  },
+  "retained_cases": [
+    "replay",
+    "retired-view"
+  ]
+}

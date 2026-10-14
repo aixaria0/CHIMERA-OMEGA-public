@@ -1,0 +1,39 @@
+{
+  "schema": "chimera-audit-archive-context/v1",
+  "source_repository": "aixaria0/chimera-rchain-staking-audit",
+  "source_revision": "ac839aa088ed66af726b53bb88be4d8d39cbd6a2",
+  "archive_id": "SR003/read-rounding-01",
+  "manifest_sha256": "d2dc6b82a8e5e69f1cdabcc4c54b7c2245c5617b23de896825176a2223b0e4a5",
+  "selection": [
+    {
+      "path": "blocks.json",
+      "role": "raw_observation",
+      "surface": "host_block_catalog"
+    },
+    {
+      "path": "config.identity",
+      "role": "configuration",
+      "surface": "not_applicable"
+    },
+    {
+      "path": "explore-by-hash.response.json",
+      "role": "raw_observation",
+      "surface": "native_pos_read"
+    },
+    {
+      "path": "js-parse-witness.json",
+      "role": "derived_interpretation",
+      "surface": "not_applicable"
+    },
+    {
+      "path": "source-binding.json",
+      "role": "source_declaration",
+      "surface": "not_applicable"
+    },
+    {
+      "path": "wallet-display-witness.json",
+      "role": "derived_interpretation",
+      "surface": "not_applicable"
+    }
+  ]
+}

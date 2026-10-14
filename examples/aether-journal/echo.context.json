@@ -1,0 +1,15 @@
+{
+  "schema": "chimera-aether-journal-context/v1",
+  "source_repository": "aixaria0/aether-runtime",
+  "source_revision": "30dad8ec794e3f27600bfc0a5a5df072e79ba8c4",
+  "lineage_context": {
+    "schema": "chimera-aether-lineage-context/v1",
+    "source_repository": "aixaria0/aether-runtime",
+    "source_revision": "04d785f7beee5ff96d78e092a1d73b79987c9e0e",
+    "trusted_signer_fingerprint_sha256": "96c537fd84f3c0b1e4aed0156711f5ef7df4311ca99685a533929513c19bc320",
+    "certificate_digest": "d5fc3cf724c09546f27ca09e0d8f0c5671e463866ba7070650778612cb81b2a8",
+    "journal_head_sha256": "343af5993c7911091e699e1fe41fc8d9c79546261bb913f0465010f0e5b2dea2",
+    "journal_event_count": 10
+  },
+  "journal_export_digest": "52b4a178b964a6791bb5f0ed88e914dd5198378018f5d29c52dd9344bec3035c"
+}

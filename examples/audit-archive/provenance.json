@@ -1,0 +1,25 @@
+{
+  "schema": "chimera-audit-archive-fixture-provenance/v1",
+  "source_repository": "aixaria0/chimera-rchain-staking-audit",
+  "source_revision": "ac839aa088ed66af726b53bb88be4d8d39cbd6a2",
+  "archive_id": "SR003/read-rounding-01",
+  "acquisition": "Exact UTF-8 source files fetched through authorized access at the pinned private-repository revision; selected bytes independently checked against the original SHA-256 manifest.",
+  "selected_source_sha256": {
+    "blocks.json": "6dc6d907f7d853d601c330f8ac616c89904d01cb79cb94d7b9c918279015cabf",
+    "config.identity": "34321b3909dde5c9fbc471ba329daa457bbe3b286bfb80223367353f9ef0983f",
+    "explore-by-hash.response.json": "e19602c228ec948c7bde55e7f18b41b4eb61900adbb857cf5777eab90ee7b1f6",
+    "js-parse-witness.json": "c15cb26fe50dc0f93fa8d27a155fa12f96498de01e664eb85cd6b6d982dca7b8",
+    "source-binding.json": "d52b851af1d9a07c564ba08a7eafb6aaa7572c074f619eedb8a0ed94e76d5dd5",
+    "wallet-display-witness.json": "ab437a182eb185538de121759d34317678c70edd8c3cf7836ae51ed1b8905045"
+  },
+  "manifest_sha256": "d2dc6b82a8e5e69f1cdabcc4c54b7c2245c5617b23de896825176a2223b0e4a5",
+  "artifact_sha256": {
+    "read-capture.archive.json": "910607283ff0feaa2a56d597cb394f3d063c758b0ebb4ca4e9ef829eb03dd9c8",
+    "read-capture.context.json": "356901d4cf7413c07297560a1ffddb473cde0f255be0ead8ffdd108097de1adf",
+    "read-capture.context.sha256": "aacf5e83d1c9cc0959850102ea23ac9b796b66bcf372c142521487237edb679e",
+    "read-capture.report.json": "82c4eba8377a3be82b5193f5ae89230fa4255decca06f72128c6e7e7deaacc8c"
+  },
+  "report_scope": "PINNED_ARCHIVE_BYTES_AND_REVIEWER_SELECTED_ROLES_ONLY",
+  "target_execution": "NOT_RUN",
+  "finding_verdict": "NOT_RUN"
+}

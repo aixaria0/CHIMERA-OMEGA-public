@@ -1,0 +1,68 @@
+{
+  "authorizations": [
+    {
+      "authorization_binding": "CONFIRMED",
+      "key_id": "key-96c537fd84f3c0b1",
+      "policy_id": "policy-2aa6fd15fe7e051f",
+      "policy_revision": 1,
+      "policy_sha256": "2aa6fd15fe7e051fb0df09cba32e2e04d0ae7871f03133c82a1d7e6bbf9d5dc4",
+      "receipt_sha256": "a5f5809d73860651008cc3978bb6df6f0e111cc5a30af602f569b47f83e84860",
+      "reviewer_key_status": "retired",
+      "role": "execution",
+      "signer_fingerprint_sha256": "96c537fd84f3c0b1e4aed0156711f5ef7df4311ca99685a533929513c19bc320",
+      "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7"
+    }
+  ],
+  "certificate_digest": "df82a936376571cce8da7cc05aaea2c449f2f91c30c775a7ad8773373dae6ad7",
+  "context_digest": "46d3c7c99dcbb68f8aa817f6a43b953962ea4710456ce174bc7e809e7b2d50d9",
+  "coverage": "GENESIS_TO_PINNED_HEAD",
+  "current_live_key_authorization": "UNKNOWN",
+  "direct_replay_binding": "NOT_APPLICABLE",
+  "external_journal_anchor": "UNKNOWN",
+  "historical_time_authorization": "UNKNOWN",
+  "independent_observation": "UNKNOWN",
+  "journal_chain_integrity": "CONFIRMED",
+  "journal_event_count": 10,
+  "journal_export_digest": "67a73b094484bcee2225811ffdb7e5fb360dc7a9df27598ee7c6109dbbc256c1",
+  "journal_export_source_revision": "30dad8ec794e3f27600bfc0a5a5df072e79ba8c4",
+  "journal_head_sha256": "343af5993c7911091e699e1fe41fc8d9c79546261bb913f0465010f0e5b2dea2",
+  "journal_sequence_integrity": "CONFIRMED",
+  "limitations": [
+    "The reviewer pin selects one registry snapshot and exact checkpoint; registry contents cannot choose their own authority.",
+    "Active or retired keys authorize only explicitly listed receipt hashes; revoked keys and withdrawn policies cannot authorize selected receipts.",
+    "Execution and direct replay parent may use different approved keys; ancestry beyond that parent is not assessed.",
+    "Policy v1 remains bounded to the compiled echo, ASCII-uppercase and UTF-8 SHA-256 semantics; registry entries cannot widen those semantics.",
+    "Producer current-key assessments remain attributed and unchanged; successful historical verification does not rewrite the producer's decision.",
+    "No timestamp establishes a validity period, compromise time or newest registry; current live-key authority and registry freshness remain UNKNOWN.",
+    "The bounded complete chain is relative to the selected head, not canonical global history or an independent external anchor.",
+    "Offline verification performs no target execution, public-testnet interaction or upstream operational action."
+  ],
+  "lineage_evidence_digest": "8558b4dfbb244f0d4603bc74f4ed9454997604e76947a11d71a2fb052aa99845",
+  "lineage_source_revision": "04d785f7beee5ff96d78e092a1d73b79987c9e0e",
+  "omega_core_verdict": "NOT_RUN",
+  "parent_receipt_event_binding": "NOT_APPLICABLE",
+  "producer_binary_attestation": "UNKNOWN",
+  "producer_view": {
+    "assessment": "rejected",
+    "authority": "ATTRIBUTED_ONLY",
+    "failed_invariants": [
+      "trusted_signer"
+    ],
+    "journal_valid": true,
+    "selected_signer_fingerprint_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  "raw_operation_binding": "CONFIRMED",
+  "receipt_event_binding": "CONFIRMED",
+  "receipt_sha256": "a5f5809d73860651008cc3978bb6df6f0e111cc5a30af602f569b47f83e84860",
+  "registry_authorization_binding": "CONFIRMED",
+  "registry_digest": "2545fe4b4a1855c526671962cbdb5b68808b13fb99af403a3dcd1dba741b38a7",
+  "registry_freshness": "UNKNOWN",
+  "runtime_reproduction": "NOT_RUN",
+  "schema": "chimera-aether-historical-journal-binding/v1",
+  "scope": "EXACT_RECEIPT_REGISTRY_AUTHORIZATION_AND_PINNED_COMPLETE_JOURNAL_ONLY",
+  "selected_policy_binding": "CONFIRMED",
+  "signature_integrity": "CONFIRMED",
+  "source_repository": "aixaria0/aether-runtime",
+  "status": "CONFIRMED",
+  "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7"
+}

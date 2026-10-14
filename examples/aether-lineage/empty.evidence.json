@@ -1,0 +1,161 @@
+{
+  "schema": "chimera-aether-lineage-evidence/v1",
+  "certificate": {
+    "schema": "lattice-ontology/v1",
+    "artifacts": [
+      {
+        "id": "aether:artifact:b1eef588-d8d1-4b3a-b8ff-03566b24e29f:input",
+        "kind": "execution_input",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "parent": null
+      },
+      {
+        "id": "aether:artifact:b1eef588-d8d1-4b3a-b8ff-03566b24e29f:output",
+        "kind": "execution_output",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "parent": "aether:artifact:b1eef588-d8d1-4b3a-b8ff-03566b24e29f:input"
+      }
+    ],
+    "transformation": {
+      "id": "aether:transformation:b1eef588-d8d1-4b3a-b8ff-03566b24e29f",
+      "operation": "echo",
+      "input": "aether:artifact:b1eef588-d8d1-4b3a-b8ff-03566b24e29f:input",
+      "output": "aether:artifact:b1eef588-d8d1-4b3a-b8ff-03566b24e29f:output",
+      "evidence_ref": "9f9f4d8d927d793a392382a9d43f78cbab2fcaaf1b00aef4426cb34a019ad1d1",
+      "replay_of": null
+    },
+    "evidence": {
+      "source": "/evidence/b1eef588-d8d1-4b3a-b8ff-03566b24e29f",
+      "receipt": {
+        "receipt_version": 2,
+        "receipt_sha256": "9f9f4d8d927d793a392382a9d43f78cbab2fcaaf1b00aef4426cb34a019ad1d1",
+        "task_id": "b1eef588-d8d1-4b3a-b8ff-03566b24e29f",
+        "permit_id": "cc767e50-c4a3-4bc6-a4cc-5809e250ea74",
+        "parent_task_id": null,
+        "operation": "echo",
+        "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "policy_sha256": "2aa6fd15fe7e051fb0df09cba32e2e04d0ae7871f03133c82a1d7e6bbf9d5dc4",
+        "policy_revision": 1,
+        "capabilities": 1,
+        "capability_names": [
+          "compute"
+        ],
+        "executor_id": "rust-builtin-v1",
+        "executor_identity_sha256": "5d2bafd9c273f88a1ab85d8bd47df36333af5b3f177ec81d91a106f96e82fad1",
+        "deadline_ms": 10000,
+        "elapsed_ms": 0,
+        "verified": true,
+        "attestation": {
+          "algorithm": "ed25519",
+          "domain": "aether.execution-receipt.v1",
+          "public_key_hex": "9819170e30ae60231b0ec0135870eff0002c79cc54c81e3b1c4884860662bf78",
+          "key_fingerprint_sha256": "923530bfd7b28829590e85d2c2b2675becde47f31109ccffdb7a692741614a22",
+          "signature_hex": "f533dc6faeb60fcdca16e724e4e3eede405ffaa88cc08a4897f3c89a676bdf487ab5e5eba7e2fcf60c917e85c8889ecb135f02275f7d752c8018135df5129305"
+        }
+      },
+      "receipt_verification": {
+        "digest_matches": true,
+        "signature_present": true,
+        "algorithm_supported": true,
+        "domain_matches": true,
+        "fingerprint_matches": true,
+        "signature_valid": true,
+        "valid": true
+      },
+      "journal": {
+        "valid": true,
+        "event_count": 28,
+        "head_hash": "4eb01685f958ee89481cbbafb4627768aca5f3d74f087289f91cb95dc7d44e72",
+        "first_invalid_sequence": null
+      }
+    },
+    "invariants": [
+      {
+        "name": "receipt_attestation",
+        "passed": true
+      },
+      {
+        "name": "trusted_signer",
+        "passed": true
+      },
+      {
+        "name": "record_binding",
+        "passed": true
+      },
+      {
+        "name": "operation_result",
+        "passed": true
+      },
+      {
+        "name": "current_policy",
+        "passed": true
+      },
+      {
+        "name": "verified_receipt_v2",
+        "passed": true
+      },
+      {
+        "name": "journal_integrity",
+        "passed": true
+      },
+      {
+        "name": "journal_receipt_binding",
+        "passed": true
+      },
+      {
+        "name": "replay_provenance",
+        "passed": true
+      }
+    ],
+    "assessment": {
+      "status": "accepted",
+      "scope": "allowlisted_execution_lineage",
+      "trusted_signer_fingerprint_sha256": "923530bfd7b28829590e85d2c2b2675becde47f31109ccffdb7a692741614a22",
+      "failed_invariants": [],
+      "not_evaluated": [
+        "perturbation_stability",
+        "statistical_entropy",
+        "generalized_model_fidelity",
+        "external_journal_anchor",
+        "executor_binary_attestation"
+      ]
+    }
+  },
+  "execution": {
+    "task_id": "b1eef588-d8d1-4b3a-b8ff-03566b24e29f",
+    "parent_task_id": null,
+    "operation": "echo",
+    "payload": "",
+    "output": "",
+    "receipt": {
+      "receipt_version": 2,
+      "receipt_sha256": "9f9f4d8d927d793a392382a9d43f78cbab2fcaaf1b00aef4426cb34a019ad1d1",
+      "task_id": "b1eef588-d8d1-4b3a-b8ff-03566b24e29f",
+      "permit_id": "cc767e50-c4a3-4bc6-a4cc-5809e250ea74",
+      "parent_task_id": null,
+      "operation": "echo",
+      "input_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "output_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "policy_sha256": "2aa6fd15fe7e051fb0df09cba32e2e04d0ae7871f03133c82a1d7e6bbf9d5dc4",
+      "policy_revision": 1,
+      "capabilities": 1,
+      "capability_names": [
+        "compute"
+      ],
+      "executor_id": "rust-builtin-v1",
+      "executor_identity_sha256": "5d2bafd9c273f88a1ab85d8bd47df36333af5b3f177ec81d91a106f96e82fad1",
+      "deadline_ms": 10000,
+      "elapsed_ms": 0,
+      "verified": true,
+      "attestation": {
+        "algorithm": "ed25519",
+        "domain": "aether.execution-receipt.v1",
+        "public_key_hex": "9819170e30ae60231b0ec0135870eff0002c79cc54c81e3b1c4884860662bf78",
+        "key_fingerprint_sha256": "923530bfd7b28829590e85d2c2b2675becde47f31109ccffdb7a692741614a22",
+        "signature_hex": "f533dc6faeb60fcdca16e724e4e3eede405ffaa88cc08a4897f3c89a676bdf487ab5e5eba7e2fcf60c917e85c8889ecb135f02275f7d752c8018135df5129305"
+      }
+    }
+  },
+  "parent": null
+}

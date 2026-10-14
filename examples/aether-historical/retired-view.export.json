@@ -1,0 +1,272 @@
+{
+  "schema": "aether-journal-export/v1",
+  "lineage": {
+    "schema": "chimera-aether-lineage-evidence/v1",
+    "certificate": {
+      "schema": "lattice-ontology/v1",
+      "artifacts": [
+        {
+          "id": "aether:artifact:f44f4d63-f6d7-484f-9657-cb1c892747e7:input",
+          "kind": "execution_input",
+          "sha256": "819706d452444ee3bcb645a993c17e8ca84b94436f8e4e4b1cb3db41bddd1e44",
+          "parent": null
+        },
+        {
+          "id": "aether:artifact:f44f4d63-f6d7-484f-9657-cb1c892747e7:output",
+          "kind": "execution_output",
+          "sha256": "819706d452444ee3bcb645a993c17e8ca84b94436f8e4e4b1cb3db41bddd1e44",
+          "parent": "aether:artifact:f44f4d63-f6d7-484f-9657-cb1c892747e7:input"
+        }
+      ],
+      "transformation": {
+        "id": "aether:transformation:f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "operation": "echo",
+        "input": "aether:artifact:f44f4d63-f6d7-484f-9657-cb1c892747e7:input",
+        "output": "aether:artifact:f44f4d63-f6d7-484f-9657-cb1c892747e7:output",
+        "evidence_ref": "a5f5809d73860651008cc3978bb6df6f0e111cc5a30af602f569b47f83e84860",
+        "replay_of": null
+      },
+      "evidence": {
+        "source": "/evidence/f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "receipt": {
+          "receipt_version": 2,
+          "receipt_sha256": "a5f5809d73860651008cc3978bb6df6f0e111cc5a30af602f569b47f83e84860",
+          "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+          "permit_id": "7f734fde-62a7-4b76-b0da-a1c348a4d3d0",
+          "parent_task_id": null,
+          "operation": "echo",
+          "input_sha256": "819706d452444ee3bcb645a993c17e8ca84b94436f8e4e4b1cb3db41bddd1e44",
+          "output_sha256": "819706d452444ee3bcb645a993c17e8ca84b94436f8e4e4b1cb3db41bddd1e44",
+          "policy_sha256": "2aa6fd15fe7e051fb0df09cba32e2e04d0ae7871f03133c82a1d7e6bbf9d5dc4",
+          "policy_revision": 1,
+          "capabilities": 1,
+          "capability_names": [
+            "compute"
+          ],
+          "executor_id": "rust-builtin-v1",
+          "executor_identity_sha256": "5d2bafd9c273f88a1ab85d8bd47df36333af5b3f177ec81d91a106f96e82fad1",
+          "deadline_ms": 10000,
+          "elapsed_ms": 0,
+          "verified": true,
+          "attestation": {
+            "algorithm": "ed25519",
+            "domain": "aether.execution-receipt.v1",
+            "public_key_hex": "981b16a86b8ca255206530e6092134299fee121d9fd30368126374428da2bf0b",
+            "key_fingerprint_sha256": "96c537fd84f3c0b1e4aed0156711f5ef7df4311ca99685a533929513c19bc320",
+            "signature_hex": "3629f9b8e61ea1b4ad95b1ebb420a3a293e932f885db5c9b4f41382857d7749d3ba9b66b096fbc35c42f021599c7ff3ea91659cd943fe43b3b45cb07d3a1c40a"
+          }
+        },
+        "receipt_verification": {
+          "digest_matches": true,
+          "signature_present": true,
+          "algorithm_supported": true,
+          "domain_matches": true,
+          "fingerprint_matches": true,
+          "signature_valid": true,
+          "valid": true
+        },
+        "journal": {
+          "valid": true,
+          "event_count": 10,
+          "head_hash": "343af5993c7911091e699e1fe41fc8d9c79546261bb913f0465010f0e5b2dea2",
+          "first_invalid_sequence": null
+        }
+      },
+      "invariants": [
+        {
+          "name": "receipt_attestation",
+          "passed": true
+        },
+        {
+          "name": "trusted_signer",
+          "passed": false
+        },
+        {
+          "name": "record_binding",
+          "passed": true
+        },
+        {
+          "name": "operation_result",
+          "passed": true
+        },
+        {
+          "name": "current_policy",
+          "passed": true
+        },
+        {
+          "name": "verified_receipt_v2",
+          "passed": true
+        },
+        {
+          "name": "journal_integrity",
+          "passed": true
+        },
+        {
+          "name": "journal_receipt_binding",
+          "passed": true
+        },
+        {
+          "name": "replay_provenance",
+          "passed": true
+        }
+      ],
+      "assessment": {
+        "status": "rejected",
+        "scope": "allowlisted_execution_lineage",
+        "trusted_signer_fingerprint_sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+        "failed_invariants": [
+          "trusted_signer"
+        ],
+        "not_evaluated": [
+          "perturbation_stability",
+          "statistical_entropy",
+          "generalized_model_fidelity",
+          "external_journal_anchor",
+          "executor_binary_attestation"
+        ]
+      }
+    },
+    "execution": {
+      "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+      "parent_task_id": null,
+      "operation": "echo",
+      "payload": "journal: سلام 🌌\n\"quote\"\\\t\u0000",
+      "output": "journal: سلام 🌌\n\"quote\"\\\t\u0000",
+      "receipt": {
+        "receipt_version": 2,
+        "receipt_sha256": "a5f5809d73860651008cc3978bb6df6f0e111cc5a30af602f569b47f83e84860",
+        "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "permit_id": "7f734fde-62a7-4b76-b0da-a1c348a4d3d0",
+        "parent_task_id": null,
+        "operation": "echo",
+        "input_sha256": "819706d452444ee3bcb645a993c17e8ca84b94436f8e4e4b1cb3db41bddd1e44",
+        "output_sha256": "819706d452444ee3bcb645a993c17e8ca84b94436f8e4e4b1cb3db41bddd1e44",
+        "policy_sha256": "2aa6fd15fe7e051fb0df09cba32e2e04d0ae7871f03133c82a1d7e6bbf9d5dc4",
+        "policy_revision": 1,
+        "capabilities": 1,
+        "capability_names": [
+          "compute"
+        ],
+        "executor_id": "rust-builtin-v1",
+        "executor_identity_sha256": "5d2bafd9c273f88a1ab85d8bd47df36333af5b3f177ec81d91a106f96e82fad1",
+        "deadline_ms": 10000,
+        "elapsed_ms": 0,
+        "verified": true,
+        "attestation": {
+          "algorithm": "ed25519",
+          "domain": "aether.execution-receipt.v1",
+          "public_key_hex": "981b16a86b8ca255206530e6092134299fee121d9fd30368126374428da2bf0b",
+          "key_fingerprint_sha256": "96c537fd84f3c0b1e4aed0156711f5ef7df4311ca99685a533929513c19bc320",
+          "signature_hex": "3629f9b8e61ea1b4ad95b1ebb420a3a293e932f885db5c9b4f41382857d7749d3ba9b66b096fbc35c42f021599c7ff3ea91659cd943fe43b3b45cb07d3a1c40a"
+        }
+      }
+    },
+    "parent": null
+  },
+  "journal": {
+    "schema": "aether-journal-events/v1",
+    "coverage": "genesis_to_snapshot_head",
+    "events": [
+      {
+        "sequence": 1,
+        "event_id": "135107b0-e801-49d5-8b36-ef7af15ecb5f",
+        "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "event_type": "TASK_ACCEPTED",
+        "timestamp_ns_decimal": "1791343715966020990",
+        "payload_json": "{\"input_sha256\":\"819706d452444ee3bcb645a993c17e8ca84b94436f8e4e4b1cb3db41bddd1e44\",\"operation\":\"echo\"}",
+        "previous_hash": null,
+        "event_hash": "2c6962fc800db191fc9e83d89d1a0320430a17972fe25e3dfd8c90b03ce46346"
+      },
+      {
+        "sequence": 2,
+        "event_id": "857b69bd-4de7-45a0-b3b4-851c50100916",
+        "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "event_type": "POLICY_AUTHORIZED",
+        "timestamp_ns_decimal": "1791343715990240730",
+        "payload_json": "{\"capabilities\":\"compute\",\"executor_id\":\"cpp-grpc-v1\",\"policy_sha256\":\"ec13f398297c0975987dee73cd4dc35f6341a3af7826f5c47e0a093b3e6575e0\"}",
+        "previous_hash": "2c6962fc800db191fc9e83d89d1a0320430a17972fe25e3dfd8c90b03ce46346",
+        "event_hash": "6d2cad668533d5d99bd937882430b12464e16e610500487d979929da516fabf1"
+      },
+      {
+        "sequence": 3,
+        "event_id": "ac5998e8-0468-4483-9e9c-4148a9e645d6",
+        "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "event_type": "EXECUTOR_SELECTED",
+        "timestamp_ns_decimal": "1791343716017474949",
+        "payload_json": "{\"attempt\":\"0\",\"executor_id\":\"cpp-grpc-v1\",\"policy_sha256\":\"ec13f398297c0975987dee73cd4dc35f6341a3af7826f5c47e0a093b3e6575e0\"}",
+        "previous_hash": "6d2cad668533d5d99bd937882430b12464e16e610500487d979929da516fabf1",
+        "event_hash": "ff6392a101e1d5bd466bf5d66cea030dbe80c503ee070f91fee833211da194fb"
+      },
+      {
+        "sequence": 4,
+        "event_id": "ef703f71-5823-4a25-b2e1-aa700dc01a70",
+        "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "event_type": "EXECUTION_STARTED",
+        "timestamp_ns_decimal": "1791343716038712240",
+        "payload_json": "{\"executor_id\":\"cpp-grpc-v1\"}",
+        "previous_hash": "ff6392a101e1d5bd466bf5d66cea030dbe80c503ee070f91fee833211da194fb",
+        "event_hash": "e6f48a568b87f4a097475b723a0bc4d86416ebd0479a9863ff65bb77179c946c"
+      },
+      {
+        "sequence": 5,
+        "event_id": "cb28f8d4-ab6f-4f0a-9e8a-f5a47cda25be",
+        "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "event_type": "EXECUTOR_FAILED",
+        "timestamp_ns_decimal": "1791343716077450938",
+        "payload_json": "{\"executor_id\":\"cpp-grpc-v1\",\"reason\":\"grpc:The service is currently unavailable\"}",
+        "previous_hash": "e6f48a568b87f4a097475b723a0bc4d86416ebd0479a9863ff65bb77179c946c",
+        "event_hash": "97eb16aa61487b441b2ee746e724441b99798ff6586d7b6ac0e71bf8fec12387"
+      },
+      {
+        "sequence": 6,
+        "event_id": "6b3fd7cc-3f1d-4aa7-a8cc-aac914185298",
+        "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "event_type": "POLICY_AUTHORIZED",
+        "timestamp_ns_decimal": "1791343716094327240",
+        "payload_json": "{\"capabilities\":\"compute\",\"executor_id\":\"rust-builtin-v1\",\"policy_sha256\":\"2aa6fd15fe7e051fb0df09cba32e2e04d0ae7871f03133c82a1d7e6bbf9d5dc4\"}",
+        "previous_hash": "97eb16aa61487b441b2ee746e724441b99798ff6586d7b6ac0e71bf8fec12387",
+        "event_hash": "69c72e3287547986fe8c83b528e8d4b2015419f610c5c33d66d0cf49e4010344"
+      },
+      {
+        "sequence": 7,
+        "event_id": "9f3a80a1-4b2c-4129-8771-deaf47c0e6fd",
+        "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "event_type": "FAILOVER_SELECTED",
+        "timestamp_ns_decimal": "1791343716111359636",
+        "payload_json": "{\"attempt\":\"1\",\"executor_id\":\"rust-builtin-v1\",\"policy_sha256\":\"2aa6fd15fe7e051fb0df09cba32e2e04d0ae7871f03133c82a1d7e6bbf9d5dc4\"}",
+        "previous_hash": "69c72e3287547986fe8c83b528e8d4b2015419f610c5c33d66d0cf49e4010344",
+        "event_hash": "f68521d5e594c7eed1d39902439eb1ae6077625387dc4ed6138e6e0be536dc22"
+      },
+      {
+        "sequence": 8,
+        "event_id": "54f157cc-f846-422b-906f-2f0ea9dc7d91",
+        "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "event_type": "EXECUTION_STARTED",
+        "timestamp_ns_decimal": "1791343716132927136",
+        "payload_json": "{\"executor_id\":\"rust-builtin-v1\"}",
+        "previous_hash": "f68521d5e594c7eed1d39902439eb1ae6077625387dc4ed6138e6e0be536dc22",
+        "event_hash": "f5df93455346019780d4cc8896917fe3ebf000f71e5b14ff8831ebcc2569206f"
+      },
+      {
+        "sequence": 9,
+        "event_id": "f5a7c47d-6613-4779-b7e4-09bacd05527b",
+        "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "event_type": "RECEIPT_SIGNED",
+        "timestamp_ns_decimal": "1791343716193657865",
+        "payload_json": "{\"algorithm\":\"ed25519\",\"receipt_sha256\":\"a5f5809d73860651008cc3978bb6df6f0e111cc5a30af602f569b47f83e84860\",\"signer_fingerprint\":\"96c537fd84f3c0b1e4aed0156711f5ef7df4311ca99685a533929513c19bc320\"}",
+        "previous_hash": "f5df93455346019780d4cc8896917fe3ebf000f71e5b14ff8831ebcc2569206f",
+        "event_hash": "ed66237234043fedc8044a4eed6344def299d8c7ab48d44aaf49c374f262b065"
+      },
+      {
+        "sequence": 10,
+        "event_id": "c468c2b8-dd34-4017-b34f-dcd4df05127a",
+        "task_id": "f44f4d63-f6d7-484f-9657-cb1c892747e7",
+        "event_type": "VERIFICATION_PASSED",
+        "timestamp_ns_decimal": "1791343716209832657",
+        "payload_json": "{\"executor_id\":\"rust-builtin-v1\",\"receipt_sha256\":\"a5f5809d73860651008cc3978bb6df6f0e111cc5a30af602f569b47f83e84860\"}",
+        "previous_hash": "ed66237234043fedc8044a4eed6344def299d8c7ab48d44aaf49c374f262b065",
+        "event_hash": "343af5993c7911091e699e1fe41fc8d9c79546261bb913f0465010f0e5b2dea2"
+      }
+    ]
+  }
+}

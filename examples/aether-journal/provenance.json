@@ -1,0 +1,50 @@
+{
+  "schema": "chimera-aether-journal-fixture-provenance/v1",
+  "recorded_at_utc": "2026-10-07T03:28:46.474186+00:00",
+  "export_source_revision": "30dad8ec794e3f27600bfc0a5a5df072e79ba8c4",
+  "lineage_semantics_revision": "04d785f7beee5ff96d78e092a1d73b79987c9e0e",
+  "aether_binary_sha256": "109b1da666085387ef7101d164f67f4dc376aae21e9f9902623727f8bab241c6",
+  "omega_binary_sha256": "146a4dae7b59b675a1f95ca7722916ae07dd9b3d1ecd151310910e57d2eae4a7",
+  "omega_source_sha256": {
+    "Cargo.lock": "0d5aff82259ed51b4f4b0c1bd8ad5a27626be68c90dade0c56f8fc98bcce7ad7",
+    "rust/src/aether_journal.rs": "c278ba0402d46a8ff9d891fb437e77e7626b0028c3d047768df5dc95ff33d036",
+    "rust/src/aether_lattice.rs": "628c647a2bb591146783a5e50cec8a1179867f0d9933de741e34e6c3ddd20b46",
+    "rust/src/encoding.rs": "96abbef24121543867a015a565404e1503330ccda82cbdc92c1e7cd1e8afa6b0",
+    "rust/src/main.rs": "684e58c48883f71abbd5c84cd6d5d1dfa8ed1ca38d4845092b9e05be627265db",
+    "tools/aether-journal-conformance.py": "ff87a37c08a0d0f794bab40837ce330b87df9a01d469dd3ac5a40f003d4c9feb",
+    "tools/aether-lineage-conformance.py": "157a377779a10d9dbd7064117ebf1793b5d5935e90fe0e1eb196a865d85fe3df"
+  },
+  "artifact_sha256": {
+    "echo.context.json": "4e421c21e3808b87595b0f9099566a9e06a65edde86ec73790d2a08d9ab3d8db",
+    "echo.context.sha256": "7f71696242e3733281250552a5a479c041008cc510027f22fbb182f1c87a7bf5",
+    "echo.export.json": "9a7cf2065e24bb11e354ac3e18d059ce4738bb4fa3de2a9ad91435a0e552f8a7",
+    "echo.report.json": "a7a5941055d0d85a741134b3f31c5b972df9c4d3f80418cfd65961e369c1ef33",
+    "empty.context.json": "43a1abdcb7b6658e9323879cc94a6839f2c52b47acf3996602c64400328db8f9",
+    "empty.context.sha256": "daf1f3101ebe52fe16d864bec44d2fd923e4b28e2f7580a790db9de1197c2591",
+    "empty.export.json": "bdb6cc32335d37dc533246cc28c256c6a165d3d8a392bd1867c9638f0fd84f55",
+    "empty.report.json": "ef7ea915adfb5d579f150b3d47d011d83dbe375e486d5d67db76c5d1f7077d2b",
+    "replay.context.json": "511989ceafdd57ea8498344400b0013bba2c5958c65a57bd5a008a82149f39f7",
+    "replay.context.sha256": "2040801c7788fa892dd039f102351cac0fc2c4cf09528f1513dff42ab68a7fc8",
+    "replay.export.json": "2695f3aa7b967f50bf79f24711fdebf3a1cad1ca50b3faf95ee3f36dcd02d1e0",
+    "replay.report.json": "16272983854af15219c2fbbfeee1d90524eec18d80d9eb45603d4f46f434e205",
+    "sha256.context.json": "c00c36d43fc828b85cf4612af6f4c98c62cafdad2b0e1372afaf98b9dc83091e",
+    "sha256.context.sha256": "d612a4c0d3fda9fdb9ec1ccd4bc1bd3657e3c5cd2e8516aa9e14fbdccd5c0001",
+    "sha256.export.json": "9a8b603118b1e67b0153855ff54f4886d98b524b2a54b6840873659f09cc8264",
+    "sha256.report.json": "5623c42665fe17f290723291d8ef2635750d3541e847f1f0f7f9b72f795fcbda",
+    "uppercase.context.json": "a3f8b7549068814792e03c3feb7087185a625b6af64f59ca17beecebced79991",
+    "uppercase.context.sha256": "268c57cfddf3e6ff40ad9ef5fed933f04264f1014f3bac8590a0165aedfeccae",
+    "uppercase.export.json": "924cb9a5437ce280c7f45362508c436e6695df8fb6ff992858befc1387119a7a",
+    "uppercase.report.json": "44067b7ec7d3cca9f54077f853130c731360a82eb0b06b58cb95c65830dee610"
+  },
+  "live_rejection_controls": 21,
+  "producer_refusal_controls": [
+    "257th_event",
+    "encoded_response_over_1_MiB",
+    "event_string_over_4096_bytes"
+  ],
+  "boundaries": [
+    "Owned fresh local fixture; contexts selected by fixture operator, not independent observation.",
+    "Public exported event/receipt bytes only; operational SQLite databases and signing seeds excluded.",
+    "Source/binary hashes record provenance, not authenticated build or external history anchoring."
+  ]
+}

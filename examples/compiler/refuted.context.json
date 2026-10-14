@@ -1,0 +1,7 @@
+{
+  "schema": "chimera-rchain-compiler-context/v1",
+  "expectedPolicyDigest": "sha256:62b4fbb51efda45dcb4b8f16c98d3d7046a362665c7d5d2ffccb6215c97fcc20",
+  "expectedTaskId": "sha256:3757f36cc428f2fa923a9b4f100bfad5d9a189e87020c3e52fbe21ce9b904572",
+  "expectedClaimId": "sha256:3cecbf8f251e68d85671be91bf4c3c1e0ccc62e5ebfeb905d79043a7271bd08e",
+  "expectedPackageDigest": "sha256:c6772aa09fb95aeaa60b7c16fd66044a93e6a7d2356d873c7b5d4509697e5c3f"
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "chimera-kv-scenario/v1",
+  "id": "fixture-kv-match",
+  "initial": {"a": 1},
+  "steps": [
+    {"kind": "add", "key": "a", "delta": 2},
+    {"kind": "put", "key": "b", "value": 5},
+    {"kind": "delete", "key": "a"}
+  ],
+  "expected": [
+    {"a": 1},
+    {"a": 3},
+    {"a": 3, "b": 5},
+    {"b": 5}
+  ]
+}

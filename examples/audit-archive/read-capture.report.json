@@ -1,0 +1,98 @@
+{
+  "archive_coverage": "SELECTED_MANIFEST_FILES_ONLY",
+  "archive_id": "SR003/read-rounding-01",
+  "artifacts": [
+    {
+      "artifact_integrity": "CONFIRMED",
+      "byte_count": 899,
+      "declared_observer_boundary": "QUERIED_NODE_BLOCK_CATALOG_ONLY",
+      "observational_authenticity": "UNKNOWN",
+      "path": "blocks.json",
+      "reviewer_selected_role": "raw_observation",
+      "reviewer_selected_surface": "host_block_catalog",
+      "sha256": "6dc6d907f7d853d601c330f8ac616c89904d01cb79cb94d7b9c918279015cabf"
+    },
+    {
+      "artifact_integrity": "CONFIRMED",
+      "byte_count": 905,
+      "declared_observer_boundary": "NO_DIRECT_OBSERVATION_CLAIM",
+      "observational_authenticity": "UNKNOWN",
+      "path": "config.identity",
+      "reviewer_selected_role": "configuration",
+      "reviewer_selected_surface": "not_applicable",
+      "sha256": "34321b3909dde5c9fbc471ba329daa457bbe3b286bfb80223367353f9ef0983f"
+    },
+    {
+      "artifact_integrity": "CONFIRMED",
+      "byte_count": 1039,
+      "declared_observer_boundary": "STATE_EXPOSED_AT_SELECTED_READ_ANCHOR_ONLY",
+      "observational_authenticity": "UNKNOWN",
+      "path": "explore-by-hash.response.json",
+      "reviewer_selected_role": "raw_observation",
+      "reviewer_selected_surface": "native_pos_read",
+      "sha256": "e19602c228ec948c7bde55e7f18b41b4eb61900adbb857cf5777eab90ee7b1f6"
+    },
+    {
+      "artifact_integrity": "CONFIRMED",
+      "byte_count": 240,
+      "declared_observer_boundary": "NO_DIRECT_OBSERVATION_CLAIM",
+      "observational_authenticity": "UNKNOWN",
+      "path": "js-parse-witness.json",
+      "reviewer_selected_role": "derived_interpretation",
+      "reviewer_selected_surface": "not_applicable",
+      "sha256": "c15cb26fe50dc0f93fa8d27a155fa12f96498de01e664eb85cd6b6d982dca7b8"
+    },
+    {
+      "artifact_integrity": "CONFIRMED",
+      "byte_count": 371,
+      "declared_observer_boundary": "NO_DIRECT_OBSERVATION_CLAIM",
+      "observational_authenticity": "UNKNOWN",
+      "path": "source-binding.json",
+      "reviewer_selected_role": "source_declaration",
+      "reviewer_selected_surface": "not_applicable",
+      "sha256": "d52b851af1d9a07c564ba08a7eafb6aaa7572c074f619eedb8a0ed94e76d5dd5"
+    },
+    {
+      "artifact_integrity": "CONFIRMED",
+      "byte_count": 158,
+      "declared_observer_boundary": "NO_DIRECT_OBSERVATION_CLAIM",
+      "observational_authenticity": "UNKNOWN",
+      "path": "wallet-display-witness.json",
+      "reviewer_selected_role": "derived_interpretation",
+      "reviewer_selected_surface": "not_applicable",
+      "sha256": "ab437a182eb185538de121759d34317678c70edd8c3cf7836ae51ed1b8905045"
+    }
+  ],
+  "consensus_finality": "UNKNOWN",
+  "context_digest": "00b7be3a2fb766e2496eeeeabe7d893e80059297bdc17bd51876f4875bd93ecc",
+  "external_archive_anchor": "UNKNOWN",
+  "finding_verdict": "NOT_RUN",
+  "independent_observation": "UNKNOWN",
+  "limitations": [
+    "The external context pin selects authority; the producer cannot establish trust by supplying its own pin.",
+    "Content hashes preserve reviewed bytes, not the authenticity or completeness of an observed execution.",
+    "Raw captures, interpretations, configuration, and source declarations retain separate reviewer-selected roles.",
+    "Observer boundaries are declared scopes; even a finalized-history label does not prove finality.",
+    "Unavailable manifest files are explicit; files outside the selected manifest are not assessed.",
+    "No source code or deployment is executed, and no archived finding or production impact is independently reproduced."
+  ],
+  "manifest_binding": "CONFIRMED",
+  "manifest_file_count": 8,
+  "manifest_sha256": "d2dc6b82a8e5e69f1cdabcc4c54b7c2245c5617b23de896825176a2223b0e4a5",
+  "omega_core_verdict": "NOT_RUN",
+  "production_impact": "UNKNOWN",
+  "reviewer_role_binding": "CONFIRMED",
+  "schema": "chimera-audit-archive-binding/v1",
+  "scope": "PINNED_ARCHIVE_BYTES_AND_REVIEWER_SELECTED_ROLES_ONLY",
+  "selected_byte_count": 3612,
+  "selected_file_count": 6,
+  "source_execution_authenticity": "UNKNOWN",
+  "source_repository": "aixaria0/chimera-rchain-staking-audit",
+  "source_revision": "ac839aa088ed66af726b53bb88be4d8d39cbd6a2",
+  "status": "ARCHIVE_BINDING_CONFIRMED",
+  "target_execution": "NOT_RUN",
+  "unavailable_artifacts": [
+    "explore-by-hash.request.json",
+    "fn_pos_info.rho"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": "chimera-aether-lineage-fixture-provenance/v1",
+  "recorded_at_utc": "2026-10-07T01:49:55.066117+00:00",
+  "aether_supported_source_revision": "04d785f7beee5ff96d78e092a1d73b79987c9e0e",
+  "acquisition": "Owned fresh local Aether process; existing HTTP identity/evidence/lineage APIs.",
+  "aether_binary_sha256": "40b32b9ce81ec4c2e2936e93d44c9e5dedd7c26bbed7ffb21d09e9286718f26b",
+  "omega_binary_sha256": "de826b39217ceda2d0f14c043ceca4ea8563809c42effa6bc1f28a0c517ed2e6",
+  "omega_source_sha256": {
+    "Cargo.lock": "0d5aff82259ed51b4f4b0c1bd8ad5a27626be68c90dade0c56f8fc98bcce7ad7",
+    "rust/src/aether_lattice.rs": "745cdeed40bfecf9e7c1eee46bd017872b9f88e50e6b7322716513f3b2fd5a9b",
+    "rust/src/main.rs": "010e3d62a3901974eb7013186de1c4f71595a2ca3872e791239c990c7c0390b9",
+    "rust/src/lib.rs": "5d3345121d5786ee9bf8fd113137f6f014035211f3568c2aac62a334fa23079d",
+    "rust/src/encoding.rs": "96abbef24121543867a015a565404e1503330ccda82cbdc92c1e7cd1e8afa6b0",
+    "tools/aether-lineage-conformance.py": "157a377779a10d9dbd7064117ebf1793b5d5935e90fe0e1eb196a865d85fe3df"
+  },
+  "artifact_sha256": {
+    "echo.context.json": "b932c892873afcaceb36dd48c73c3171aaea81592d2b37c93a924f91638beb37",
+    "echo.context.sha256": "3ddb654bbf0d1b61a339225521a1cdc776e961c84d98a952fe03765de85b30be",
+    "echo.evidence.json": "93e038668f2b5545f43e140727c8697c303ac2f32dd54c84f083ee34164c0a23",
+    "echo.report.json": "019b8a3630e3d2eb852be10e14d24c3688d0fd7a3f18e1a474b4c0a18bc34fb8",
+    "empty.context.json": "48b9994d2cb43cdc12fa1f5cb0478a7455fe0389e326d6a1ec172a32790c7306",
+    "empty.context.sha256": "5039605428d3c92956e7b38fc4ebd73d3abfb7452af09fc76586ff6260f843e5",
+    "empty.evidence.json": "0c5035e8526bc2fba678997074a05e1ae2a4f684d41c823a012c167f239f64bc",
+    "empty.report.json": "6ab0957095d4b50a0af55cec8db01bdb918dcc6c9b974753b3433d9f9869fb93",
+    "replay.context.json": "aaea592f2b3eba2264ccf8bd909950f7a231f2bbdb7787871704cfc632bf09ee",
+    "replay.context.sha256": "fd0de5ed1fe623fd56c520f7d2dbec119b51aacd686a11c958d9a07241967278",
+    "replay.evidence.json": "4e0d1694a5f8b1f677f84d4f19c323f9e69c2ca796db901487ace3331dfbf124",
+    "replay.report.json": "9d6073de4425122df147c90edccd493e893c8315b477d3aa2470e1daed0d7452",
+    "sha256.context.json": "f43fc9cc293431d66c4bf0d2cf9a0e0708183fe5350cf0310002b1792a35a96c",
+    "sha256.context.sha256": "417d35a509423258963caf1239d7df87ec9dc4e2f414da898a5d7c2e7db8ac1e",
+    "sha256.evidence.json": "48a1fc7f553837923f45e39a8b2549b08e29727771d92c3691dc8f5ca3046386",
+    "sha256.report.json": "2bc19c99ce41055b1d36e8abff48d0d718091bf5928288cf4ac31b559b26255f",
+    "uppercase.context.json": "548e543a950c342fc044b37ed24753a4dee1e76cdd41b901aec1b50eb2949a96",
+    "uppercase.context.sha256": "b344c70093185dd4d84bd03ba96bb2f5f857c7fa21ea06b02fc6315880c5619c",
+    "uppercase.evidence.json": "4d99d399ecff262ecdcd5693c840bac29c250a416b8fd7cd97d5554d2eaf7718",
+    "uppercase.report.json": "8c70a4be69d374c51b6c1335d503b5b74034f28f23b33b4141227ae9cfe64c89"
+  },
+  "boundaries": [
+    "Local interoperability fixture; no independent observation or binary attestation.",
+    "Context pins are selected by the fixture owner; real deployments require external trusted review.",
+    "Private runtime identity seed and journal are excluded from these fixtures."
+  ]
+}
